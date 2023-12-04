@@ -11,7 +11,7 @@ User=root
 Environment="PGHOST=XXCONFIGUREMEXX"
 Environment="PGPORT=XXCONFIGUREMEXX"
 Environment="PGPASSWORD=XXCONFIGUREMEXX"
-ExecStart=/root/bin/cloudprober --config_file root/cloudprober/cloudprober.cfg
+ExecStart=/root/bin/cloudprober --config_file root/cta-cloudprober/cloudprober.cfg
 
 [Install]
 WnatedBy=multi-user.target
