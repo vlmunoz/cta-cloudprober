@@ -1,0 +1,16 @@
+[Unit]
+Description=Cloudprober Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+Environment="PGHOST=XXCONFIGUREMEXX"
+Environment="PGPASSWORD=XXCONFIGUREMEXX"
+ExecStart=/root/bin/cloudprober --config_file root/cloudprober/cloudprober.cfg
+
+[Install]
+WnatedBy=multi-user.target
