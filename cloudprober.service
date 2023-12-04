@@ -9,6 +9,7 @@ Restart=always
 RestartSec=1
 User=root
 Environment="PGHOST=XXCONFIGUREMEXX"
+Environment="PGPORT=XXCONFIGUREMEXX"
 Environment="PGPASSWORD=XXCONFIGUREMEXX"
 ExecStart=/root/bin/cloudprober --config_file root/cloudprober/cloudprober.cfg
 
